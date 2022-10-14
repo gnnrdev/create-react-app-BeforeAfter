@@ -14,10 +14,10 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "start:lambda": "",
+    "start:lambda": "netlify-lambda serve src/lambda",
     "build": "run-p build:**",
     "build:app": "react-scripts build",
-    "build:lambda": "",
+    "build:lambda": "netlify-lambda build src/lambda",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
